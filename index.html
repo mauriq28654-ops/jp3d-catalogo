@@ -3,71 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JP_3D | Catálogo de Carteles y Trofeos</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>JP_3D | Catálogo de Trofeos</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
-    :root { --yellow: #e6ec19; }
-    body { background-color: #0f0f0f; color: white; font-family: 'Poppins', sans-serif; }
-    .text-yellow { color: var(--yellow); }
-    .bg-yellow { background-color: var(--yellow); }
-    .border-yellow { border-color: var(--yellow); }
+    body { font-family: 'Poppins', sans-serif; background-color: #000; color: white; }
+    .text-yellow { color: #e6ec19; }
+    .bg-yellow { background-color: #e6ec19; }
   </style>
 </head>
-<body class="min-h-screen">
+<body class="min-h-screen p-4 md:p-8">
 
-  <header class="sticky top-0 z-50 bg-black/90 border-b-2 border-yellow p-4 md:p-6 flex justify-between items-center">
-    <div class="flex items-center gap-3">
-      <div class="bg-yellow text-black font-black px-3 py-1 rounded">JP_3D</div>
-      <span class="font-bold text-lg tracking-wider">CATÁLOGO</span>
-    </div>
-    <a href="https://api.whatsapp.com/send?phone=5493888650351&text=Hola%20JP_3D,%20quiero%20consultar%20por%20un%20cartel/trofeo" target="_blank" class="bg-green-600 hover:bg-green-500 transition px-5 py-2 rounded-lg font-bold flex items-center gap-2">
-      <i class="fa-brands fa-whatsapp"></i> WhatsApp
-    </a>
+  <!-- Encabezado simple -->
+  <header class="max-w-5xl mx-auto flex justify-between items-center mb-12">
+    <div class="bg-yellow text-black font-black px-4 py-2 rounded-lg text-xl">JP_3D</div>
+    <a href="https://api.whatsapp.com/send?phone=5493888650351&text=Hola%20JP_3D,%20quiero%20consultar%20por%20un%20producto" target="_blank" class="bg-green-600 px-6 py-2 rounded-full font-bold hover:bg-green-500 transition">WhatsApp</a>
   </header>
 
-  <section class="text-center py-16 px-4">
-    <h1 class="text-4xl md:text-5xl font-black mb-4">Carteles y <span class="text-yellow">Trofeos 3D</span></h1>
-    <p class="text-gray-400 max-w-lg mx-auto">Fabricación personalizada de cartelería y premiaciones con impresión de alta calidad.</p>
+  <!-- Título principal -->
+  <section class="text-center mb-16">
+    <h1 class="text-5xl md:text-7xl font-black mb-4">TROFEOS</h1>
+    <div class="h-2 w-24 bg-yellow mx-auto"></div>
   </section>
 
-  <main class="max-w-6xl mx-auto px-4 pb-20">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- Producto 1 -->
-      <article class="bg-[#1a1a1a] border border-[#2a2a2a] rounded-2xl overflow-hidden hover:border-yellow transition duration-300">
-        <div class="w-full pt-[100%] relative bg-[#121212]">
-          <img src="https://placehold.co/400x400/121212/ffffff?text=Cartel+1" class="absolute top-0 left-0 w-full h-full object-cover" alt="Cartel">
-        </div>
-        <div class="p-6">
-          <h2 class="text-xl font-bold mb-2">Cartel Personalizado</h2>
-          <p class="text-gray-400 text-sm mb-4">Diseño a medida para tu negocio o evento.</p>
-          <a href="https://api.whatsapp.com/send?phone=5493888650351&text=Hola,%20me%20interesa%20el%20Cartel%20Personalizado" class="block w-full text-center bg-yellow text-black font-bold py-3 rounded-xl hover:bg-yellow/90 transition">
-            Pedir por WhatsApp
-          </a>
-        </div>
-      </article>
+  <!-- Galería de productos -->
+  <main class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <!-- PRODUCTO 1: Cambia el src por el nombre de tu archivo de imagen subido a GitHub -->
+    <article class="bg-[#111] border border-gray-800 rounded-3xl overflow-hidden hover:border-yellow transition">
+      <img src="https://placehold.co/600x600/222/ffffff?text=Tu+Foto+Aqui" class="w-full h-80 object-cover" alt="Trofeo">
+      <div class="p-6">
+        <h2 class="text-2xl font-bold mb-4">Nombre del Trofeo</h2>
+        <a href="https://api.whatsapp.com/send?phone=5493888650351&text=Hola,%20me%20interesa%20el%20Trofeo" class="block w-full text-center bg-yellow text-black font-black py-4 rounded-xl hover:bg-white transition">PEDIR POR WHATSAPP</a>
+      </div>
+    </article>
 
-      <!-- Producto 2 (Puedes duplicar este bloque para nuevos productos) -->
-      <article class="bg-[#1a1a1a] border border-[#2a2a2a] rounded-2xl overflow-hidden hover:border-yellow transition duration-300">
-        <div class="w-full pt-[100%] relative bg-[#121212]">
-          <img src="https://placehold.co/400x400/121212/ffffff?text=Trofeo+1" class="absolute top-0 left-0 w-full h-full object-cover" alt="Trofeo">
-        </div>
-        <div class="p-6">
-          <h2 class="text-xl font-bold mb-2">Trofeo Deportivo</h2>
-          <p class="text-gray-400 text-sm mb-4">Premiación de alta calidad para torneos.</p>
-          <a href="https://api.whatsapp.com/send?phone=5493888650351&text=Hola,%20me%20interesa%20el%20Trofeo%20Deportivo" class="block w-full text-center bg-yellow text-black font-bold py-3 rounded-xl hover:bg-yellow/90 transition">
-            Pedir por WhatsApp
-          </a>
-        </div>
-      </article>
+    <!-- PRODUCTO 2: Puedes copiar este bloque para cada trofeo nuevo -->
+    <article class="bg-[#111] border border-gray-800 rounded-3xl overflow-hidden hover:border-yellow transition">
+      <img src="https://placehold.co/600x600/222/ffffff?text=Tu+Foto+Aqui" class="w-full h-80 object-cover" alt="Trofeo">
+      <div class="p-6">
+        <h2 class="text-2xl font-bold mb-4">Nombre del Trofeo</h2>
+        <a href="https://api.whatsapp.com/send?phone=5493888650351&text=Hola,%20me%20interesa%20el%20Trofeo" class="block w-full text-center bg-yellow text-black font-black py-4 rounded-xl hover:bg-white transition">PEDIR POR WHATSAPP</a>
+      </div>
+    </article>
 
-    </div>
   </main>
 
-  <footer class="text-center py-10 border-t border-[#2a2a2a] text-gray-500">
-    <p>&copy; 2026 JP_3D - Diseño y Fabricación</p>
+  <footer class="text-center py-20 text-gray-600">
+    <p>&copy; 2026 JP_3D</p>
   </footer>
 
 </body>
