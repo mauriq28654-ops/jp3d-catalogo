@@ -3,73 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JP_3D | Trofeos Personalizados</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>JP_3D | Catálogo de Carteles y Trofeos</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root {
-      --yellow: #e6ec19;
-      --yellow-glow: rgba(230, 236, 25, 0.25);
-      --dark-bg: #0f0f0f;
-      --card-bg: #1a1a1a;
-      --border-color: #2a2a2a;
-      --text-white: #ffffff;
-      --text-gray: #a0a0a0;
-      --whatsapp: #25d366;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
-    body { background-color: var(--dark-bg); color: var(--text-white); min-height: 100vh; }
-    header { background-color: rgba(15, 15, 15, 0.95); position: sticky; top: 0; z-index: 100; border-bottom: 2px solid var(--yellow); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
-    .brand-logo-box { background: var(--yellow); color: #000; font-weight: 900; padding: 4px 10px; border-radius: 6px; }
-    .hero { text-align: center; padding: 4rem 1.5rem; }
-    .hero h1 { font-size: 3rem; font-weight: 900; margin-bottom: 1rem; }
-    .hero h1 span { color: var(--yellow); }
-    .catalog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; padding: 2rem; }
-    .product-card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; overflow: hidden; transition: 0.3s; }
-    .product-card:hover { border-color: var(--yellow); transform: translateY(-5px); }
-    .product-img-wrapper { width: 100%; padding-top: 100%; position: relative; background: #121212; }
-    .product-img-wrapper img { position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover; }
-    .product-info { padding: 1.5rem; }
-    .product-footer { margin-top: 1rem; display: flex; justify-content: space-between; align-items: center; }
-    .btn-order-ws { background-color: var(--whatsapp); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
+    :root { --yellow: #e6ec19; }
+    body { background-color: #0f0f0f; color: white; font-family: 'Poppins', sans-serif; }
+    .text-yellow { color: var(--yellow); }
+    .bg-yellow { background-color: var(--yellow); }
+    .border-yellow { border-color: var(--yellow); }
   </style>
 </head>
-<body>
+<body class="min-h-screen">
 
-  <header>
-    <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
-      <div class="brand-logo-box">JP_3D</div>
-      <span style="color:white; font-weight:700;">TROFEOS</span>
-    </a>
-    <a href="https://api.whatsapp.com/send?phone=5493888650351&text=Hola%20JP_3D,%20quiero%20consultar%20por%20un%20trofeo" target="_blank" class="btn-order-ws">
-      <i class="fa-brands fa-whatsapp"></i> Contactar
+  <header class="sticky top-0 z-50 bg-black/90 border-b-2 border-yellow p-4 md:p-6 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="bg-yellow text-black font-black px-3 py-1 rounded">JP_3D</div>
+      <span class="font-bold text-lg tracking-wider">CATÁLOGO</span>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=5493888650351&text=Hola%20JP_3D,%20quiero%20consultar%20por%20un%20cartel/trofeo" target="_blank" class="bg-green-600 hover:bg-green-500 transition px-5 py-2 rounded-lg font-bold flex items-center gap-2">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp
     </a>
   </header>
 
-  <section class="hero">
-    <h1>Especialistas en <span>Trofeos 3D</span></h1>
-    <p>Diseño y fabricación de trofeos personalizados para premiaciones, eventos y torneos.</p>
+  <section class="text-center py-16 px-4">
+    <h1 class="text-4xl md:text-5xl font-black mb-4">Carteles y <span class="text-yellow">Trofeos 3D</span></h1>
+    <p class="text-gray-400 max-w-lg mx-auto">Fabricación personalizada de cartelería y premiaciones con impresión de alta calidad.</p>
   </section>
 
-  <main class="catalog-grid">
-    <!-- Aquí puedes repetir el bloque para cada trofeo -->
-    <article class="product-card">
-      <div class="product-img-wrapper"><img src="WhatsApp Image 2026-07-23 at 13.33.22.jpeg" alt="Trofeo"></div>
-      <div class="product-info">
-        <h2 style="font-size: 1.2rem;">Trofeo Deportivo</h2>
-        <p style="color:var(--text-gray); font-size:0.9rem;">Diseño personalizado para torneos y eventos especiales.</p>
-        <div class="product-footer">
-          <span style="color:var(--yellow); font-weight:800;">Consultar</span>
-          <a href="https://api.whatsapp.com/send?phone=5493888650351&text=Hola,%20me%20interesa%20el%20Trofeo%20Deportivo" class="btn-order-ws">Pedir</a>
+  <main class="max-w-6xl mx-auto px-4 pb-20">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Producto 1 -->
+      <article class="bg-[#1a1a1a] border border-[#2a2a2a] rounded-2xl overflow-hidden hover:border-yellow transition duration-300">
+        <div class="w-full pt-[100%] relative bg-[#121212]">
+          <img src="https://placehold.co/400x400/121212/ffffff?text=Cartel+1" class="absolute top-0 left-0 w-full h-full object-cover" alt="Cartel">
         </div>
-      </div>
-    </article>
+        <div class="p-6">
+          <h2 class="text-xl font-bold mb-2">Cartel Personalizado</h2>
+          <p class="text-gray-400 text-sm mb-4">Diseño a medida para tu negocio o evento.</p>
+          <a href="https://api.whatsapp.com/send?phone=5493888650351&text=Hola,%20me%20interesa%20el%20Cartel%20Personalizado" class="block w-full text-center bg-yellow text-black font-bold py-3 rounded-xl hover:bg-yellow/90 transition">
+            Pedir por WhatsApp
+          </a>
+        </div>
+      </article>
+
+      <!-- Producto 2 (Puedes duplicar este bloque para nuevos productos) -->
+      <article class="bg-[#1a1a1a] border border-[#2a2a2a] rounded-2xl overflow-hidden hover:border-yellow transition duration-300">
+        <div class="w-full pt-[100%] relative bg-[#121212]">
+          <img src="https://placehold.co/400x400/121212/ffffff?text=Trofeo+1" class="absolute top-0 left-0 w-full h-full object-cover" alt="Trofeo">
+        </div>
+        <div class="p-6">
+          <h2 class="text-xl font-bold mb-2">Trofeo Deportivo</h2>
+          <p class="text-gray-400 text-sm mb-4">Premiación de alta calidad para torneos.</p>
+          <a href="https://api.whatsapp.com/send?phone=5493888650351&text=Hola,%20me%20interesa%20el%20Trofeo%20Deportivo" class="block w-full text-center bg-yellow text-black font-bold py-3 rounded-xl hover:bg-yellow/90 transition">
+            Pedir por WhatsApp
+          </a>
+        </div>
+      </article>
+
+    </div>
   </main>
 
-  <footer style="text-align: center; padding: 3rem; color: var(--text-gray);">
-    <p>&copy; 2026 JP_3D - Trofeos Personalizados</p>
+  <footer class="text-center py-10 border-t border-[#2a2a2a] text-gray-500">
+    <p>&copy; 2026 JP_3D - Diseño y Fabricación</p>
   </footer>
 
 </body>
